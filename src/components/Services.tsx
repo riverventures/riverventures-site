@@ -47,44 +47,44 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-4 bg-primary">
+    <section className="py-8 md:py-12 px-4 bg-primary">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-extralight tracking-tight text-white mb-4">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-4xl font-extralight tracking-tight text-white mb-3">
             Services
           </h2>
-          <p className="text-lg text-text-muted font-light max-w-3xl mx-auto">
+          <p className="text-base text-text-muted font-light max-w-3xl mx-auto">
             Elite advisory and venture building services for companies seeking strategic expertise and operational excellence.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`p-8 border border-border hover:border-text-muted transition-smooth group ${
+              className={`p-5 border border-border hover:border-text-muted transition-smooth group ${
                 index % 2 === 0 ? 'bg-secondary' : 'bg-accent'
               }`}
             >
-              <div className="mb-6">
-                <div className="text-xs text-text-secondary uppercase tracking-widest mb-2">
+              <div className="mb-4">
+                <div className="text-xs text-text-secondary uppercase tracking-widest mb-1">
                   {service.subtitle}
                 </div>
-                <h3 className="text-2xl md:text-3xl font-light text-white group-hover:text-text-muted transition-smooth mb-4">
+                <h3 className="text-lg md:text-xl font-light text-white group-hover:text-text-muted transition-smooth mb-2">
                   {service.title}
                 </h3>
-                <p className="text-text-muted leading-relaxed">
+                <p className="text-text-muted leading-relaxed text-sm">
                   {service.description}
                 </p>
               </div>
 
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {service.highlights.map((highlight, idx) => (
                   <div key={idx} className="flex items-start">
-                    <div className="w-1 h-1 bg-text-muted rounded-full mt-2.5 mr-3 flex-shrink-0"></div>
-                    <span className="text-sm text-text-muted">{highlight}</span>
+                    <div className="w-1 h-1 bg-text-muted rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                    <span className="text-xs text-text-muted">{highlight}</span>
                   </div>
                 ))}
               </div>
@@ -93,9 +93,9 @@ export default function Services() {
         </div>
 
         {/* Specialization Note */}
-        <div className="mt-16 text-center">
-          <div className="inline-block px-6 py-3 border border-border bg-secondary">
-            <p className="text-sm text-text-muted">
+        <div className="mt-6 text-center">
+          <div className="inline-block px-4 py-2 border border-border bg-secondary">
+            <p className="text-xs text-text-muted">
               <span className="text-white font-medium">Specialization:</span> Fintech, Crypto, Real World Assets (RWA), 
               Stablecoins, and Emerging Technologies
             </p>
