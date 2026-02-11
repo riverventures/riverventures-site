@@ -10,7 +10,7 @@ export default function Team() {
         "Amazon: Automated 35K+ annual contract negotiations, customer support, marketing campaigns",
         "Ledger: Built web3 scam detection API protecting 1.4M monthly active users, scanning 10M transactions/month",
         "Founded crypto on/off ramp company in UAE (raised venture funding, built founding team)",
-        "Hosted Solana dinner in Riyadh with 500 Global VC — met HRH Prince Sultan Bin Fahd Bin Salman Al Saud",
+        "Hosted Solana dinner in Riyadh with 500 Global VC and Saudi institutional investors",
         "Met with H.E. Khalfan Belhoul and Ahmed Bin Sulayem at DMCC Al Centre opening",
         "Host of Solana Economic Zone: 700+ founders' conference occurring twice a year in Dubai and Abu Dhabi"
       ],
