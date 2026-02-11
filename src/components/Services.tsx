@@ -26,7 +26,7 @@ export default function Services() {
       title: "Institutional Partnerships",
       subtitle: "Solana Foundation",
       description: "Leading Solana Foundation's UAE/MENA expansion with deep relationships across banks, RWA providers, and regulatory bodies.",
-      highlights: ["Banking partnerships (Zand, RAKBANK, Citi)", "Regulatory relationships", "Institutional onboarding", "Regional ecosystem development"],
+      highlights: ["Banking and institutional partnerships", "Regulatory relationships", "Institutional onboarding", "Regional ecosystem development"],
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3" strokeLinecap="round" strokeLinejoin="round"/>
