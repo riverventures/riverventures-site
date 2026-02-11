@@ -32,9 +32,16 @@ export default function Team() {
       name: "Shweta Scott",
       title: "Co-founder",
       role: "CEO, UAE.fun",
-      bio: "Yale educated. Former Amazon Product Marketing for the Alexa business. CEO of UAE.fun, providing concierge and UAE immigration support for families and executives. Deep expertise in UAE business formation and lifestyle services.",
-      specialties: ["UAE Business Formation", "Immigration & Visas", "Product Marketing", "Lifestyle Services"],
-      social: { linkedin: "shwetascott" }
+      bio: "Yale educated. Over a decade in product management and marketing at Amazon and high-growth startups. Head of Brand Marketing for Alexa and Echo across the EU at Amazon's Luxembourg HQ, with P&L ownership for Amazon's used goods business. Former President of LiveSwitch Video, leading the SimplyOn video conferencing division. Founded The Midori Co., a premium bedding brand in the Middle East. Now CEO of UAE.fun, providing concierge and immigration support for families and executives relocating to the UAE.",
+      trackRecord: [
+        "Amazon EU: Head of Brand Marketing for Alexa & Echo, P&L ownership for customer experience and re-commerce",
+        "President, LiveSwitch Video: Led SimplyOn division, enterprise video conferencing product",
+        "Founded The Midori Co.: Premium bedding brand across the Middle East",
+        "CEO of UAE.fun: End-to-end UAE relocation, visa, and business setup services",
+        "Career coach helping mid-to-senior executives navigate transitions across industries"
+      ],
+      specialties: ["Product Marketing", "Brand Strategy", "UAE Business Formation", "Immigration & Visas", "E-commerce"],
+      social: { linkedin: "shwetajohri" }
     }
   ];
 
