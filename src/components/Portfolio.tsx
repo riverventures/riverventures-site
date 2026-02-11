@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Portfolio() {
   const portfolioCompanies = [
     { name: "Argus", url: "withargus.ai", description: "AI executive agent setup service", category: "Portfolio Company", logo: "/logos/argus.png" },
-    { name: "SnapBot", url: "snapbot.io", description: "WhatsApp product photography automation", category: "Portfolio Company", logo: "/logos/snapbot.png" },
-    { name: "UAE.fun", url: "uae.fun", description: "Concierge & UAE immigration support", category: "Portfolio Company", logo: "/logos/uaefun.png" },
+    { name: "SnapBot", url: "snapbot.io", description: "WhatsApp product photography automation", category: "Portfolio Company", letter: "S" },
+    { name: "UAE.fun", url: "uae.fun", description: "Concierge & UAE immigration support", category: "Portfolio Company", letter: "U" },
   ];
 
   return (
@@ -34,15 +34,19 @@ export default function Portfolio() {
               >
                 <div className="flex flex-col h-full">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-sm overflow-hidden flex-shrink-0 bg-secondary flex items-center justify-center">
-                      <Image
-                        src={company.logo}
-                        alt={`${company.name} logo`}
-                        width={36}
-                        height={36}
-                        className="object-contain"
-                        unoptimized
-                      />
+                    <div className="w-9 h-9 rounded-sm overflow-hidden flex-shrink-0 bg-secondary flex items-center justify-center border border-border">
+                      {company.logo ? (
+                        <Image
+                          src={company.logo}
+                          alt={`${company.name} logo`}
+                          width={36}
+                          height={36}
+                          className="object-contain"
+                          unoptimized
+                        />
+                      ) : (
+                        <span className="text-sm font-medium text-text-muted">{company.letter}</span>
+                      )}
                     </div>
                     <div className="flex-1 flex items-center justify-between">
                       <h4 className="text-xl font-medium text-white group-hover:text-river-light transition-smooth">
