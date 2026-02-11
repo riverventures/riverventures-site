@@ -60,7 +60,7 @@ export default function Hero() {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <a
-            href="https://calendar.app.google/T3ktQUwy2u8CdqEp9"
+            href="https://calendar.app.google/mgBfrMcfG4tmNvraA"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-2 bg-white text-black text-xs font-medium uppercase tracking-wider hover:bg-text-muted transition-smooth border border-white"

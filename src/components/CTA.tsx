@@ -28,7 +28,7 @@ export default function CTA() {
         {/* Consultation CTA */}
         <div className="mb-8">
           <a
-            href="https://calendar.app.google/T3ktQUwy2u8CdqEp9"
+            href="https://calendar.app.google/mgBfrMcfG4tmNvraA"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-white text-black text-sm font-medium uppercase tracking-wider hover:bg-river-light hover:text-white transition-smooth border border-white hover:border-river-light"
