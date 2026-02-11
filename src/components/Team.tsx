@@ -3,7 +3,7 @@ export default function Team() {
     {
       name: "Alex Scott",
       title: "Co-founder",
-      role: "UAE/MENA Lead, Solana Foundation",
+      role: "Co-founder, River Ventures",
       bio: "Former Amazon Product and Engineering roles in Luxembourg and London. Management Consultant at Deloitte Digital serving financial services clients in London. Founded a crypto on/off ramp company in UAE and raised venture funding. Currently UAE/MENA Regional Lead at Solana Foundation.",
       trackRecord: [
         "Led Solana ecosystem development across UAE/MENA — government relationships, founder support, large-scale hackathons",

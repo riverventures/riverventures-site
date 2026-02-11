@@ -26,7 +26,7 @@ export default function Hero() {
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed text-text-muted">
             We partner with transformational companies in{" "}
             <span className="text-white">fintech</span> and{" "}
-            <span className="text-white">crypto</span>, providing strategic advisory for equity 
+            <span className="text-white">crypto</span>, providing strategic advisory 
             and building the next generation of high-impact ventures.
           </p>
         </div>
@@ -38,8 +38,8 @@ export default function Hero() {
             <div className="text-xs text-text-secondary uppercase tracking-widest">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-lg md:text-2xl font-light text-white mb-1">UAE</div>
-            <div className="text-xs text-text-secondary uppercase tracking-widest">Solana Lead</div>
+            <div className="text-lg md:text-2xl font-light text-white mb-1">$40B+</div>
+            <div className="text-xs text-text-secondary uppercase tracking-widest">Pipeline Built</div>
           </div>
           <div className="text-center">
             <div className="text-lg md:text-2xl font-light text-white mb-1">Global</div>

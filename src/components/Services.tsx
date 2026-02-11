@@ -1,9 +1,9 @@
 export default function Services() {
   const services = [
     {
-      title: "Advisory for Equity",
-      subtitle: "Strategic Partnership",
-      description: "We provide strategic and operational expertise to early-stage and growth-stage companies in exchange for equity positions.",
+      title: "Strategic Advisory",
+      subtitle: "Growth Partnership",
+      description: "We provide strategic and operational expertise to early-stage and growth-stage companies seeking to scale in fintech and crypto.",
       highlights: [
         "Product roadmap development",
         "Go-to-market strategy",
