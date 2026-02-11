@@ -5,10 +5,31 @@ export default function Team() {
       title: "Co-founder",
       role: "UAE/MENA Lead, Solana Foundation",
       bio: "Former Amazon Product and Engineering roles in Luxembourg and London. Management Consultant at Deloitte Digital serving financial services clients in London. Founded a crypto on/off ramp company in UAE and raised venture funding. Currently UAE/MENA Regional Lead at Solana Foundation.",
+      trackRecord: [
+        "Led Solana ecosystem development across UAE/MENA — government relationships, founder support, large-scale hackathons",
+        "Amazon: Automated 35K+ annual contract negotiations, customer support, marketing campaigns",
+        "Ledger: Built web3 scam detection API protecting 1.4M monthly active users, scanning 10M transactions/month",
+        "Founded crypto on/off ramp company in UAE (raised venture funding, built founding team)",
+        "Hosted Solana dinner in Riyadh with 500 Global VC — met HRH Prince Sultan Bin Fahd Bin Salman Al Saud",
+        "Met with H.E. Khalfan Belhoul and Ahmed Bin Sulayem at DMCC Al Centre opening",
+        "Organized Founders' Villa: 49 Solana founders together in UAE"
+      ],
+      endorsements: [
+        { name: "Lily Liu, President, Solana Foundation", quote: "Only possible with Alex" },
+        { name: "Nas Daily", quote: "So impressed with how you put all of this together in such a short time" },
+        { name: "0xMert (Helius Labs)", quote: "Shoutout to @afscott for making moving to Dubai extremely easy" },
+        { name: "Akshay (Superteam)", quote: "@afscott is a beast and can help you navigate any business ambition in the Middle East" }
+      ],
+      media: [
+        { publication: "Forbes", title: "Solana Launches Dubai Crypto Economic Zone" },
+        { publication: "The National", title: "Solana blockchain seeks UAE foothold with Founders' Villa event" },
+        { publication: "Cointelegraph", title: "VC Startup Connect Dubai Edition" },
+        { publication: "The Crypto Radio", title: "Solana supercharges the crypto economy" }
+      ],
       specialties: ["Institutional Partnerships", "Regulatory Strategy", "Blockchain Infrastructure", "Regional Expansion"],
       social: {
         twitter: "afscott",
-        linkedin: "afscott"
+        linkedin: "alexfscott"
       }
     },
     {
@@ -60,6 +81,54 @@ export default function Team() {
                   {member.bio}
                 </p>
               </div>
+
+              {/* Track Record (only for Alex) */}
+              {member.trackRecord && (
+                <div className="mb-4">
+                  <div className="text-xs text-text-secondary uppercase tracking-widest mb-2">
+                    Track Record
+                  </div>
+                  <div className="space-y-1">
+                    {member.trackRecord.map((achievement, index) => (
+                      <div key={index} className="text-xs text-text-muted leading-relaxed">
+                        • {achievement}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Endorsements (only for Alex) */}
+              {member.endorsements && (
+                <div className="mb-4">
+                  <div className="text-xs text-text-secondary uppercase tracking-widest mb-2">
+                    Endorsements
+                  </div>
+                  <div className="space-y-1">
+                    {member.endorsements.map((endorsement, index) => (
+                      <div key={index} className="text-xs text-text-muted leading-relaxed">
+                        <span className="text-text-secondary font-medium">{endorsement.name}:</span> "{endorsement.quote}"
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Media Mentions (only for Alex) */}
+              {member.media && (
+                <div className="mb-4">
+                  <div className="text-xs text-text-secondary uppercase tracking-widest mb-2">
+                    Press Coverage
+                  </div>
+                  <div className="grid grid-cols-2 gap-1">
+                    {member.media.map((mention, index) => (
+                      <div key={index} className="text-xs text-text-muted">
+                        <span className="text-text-secondary font-medium">{mention.publication}</span> – {mention.title}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Specialties */}
               <div className="mb-4">
