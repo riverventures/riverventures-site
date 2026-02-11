@@ -14,7 +14,7 @@ export default function Services() {
     {
       title: "Venture Building",
       subtitle: "End-to-End Creation",
-      description: "From concept to scale, we build transformational companies with proven frameworks and elite execution.",
+      description: "From concept to scale, we build transformational companies with proven frameworks and strategic execution.",
       highlights: ["Concept validation", "Technical development", "Market entry strategy", "Scaling operations"],
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -62,7 +62,7 @@ export default function Services() {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-extralight tracking-tight text-white mb-3">Services</h2>
           <p className="text-base text-text-muted font-light max-w-3xl mx-auto">
-            Elite advisory and venture building for companies seeking strategic expertise and operational excellence.
+            Strategic advisory and venture building for companies seeking strategic expertise and operational excellence.
           </p>
         </div>
 

@@ -85,7 +85,7 @@ export default function CTA() {
         {/* Final tagline */}
         <div className="mt-6">
           <p className="text-xs text-text-secondary uppercase tracking-widest">
-            River Ventures &bull; Venture Studio & Elite Advisory
+            River Ventures &bull; Venture Studio & Strategic Advisory
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Hero() {
         {/* Tagline */}
         <div className="mb-6 space-y-1">
           <p className="text-base md:text-lg text-text-muted font-light tracking-wide uppercase">
-            Venture Studio & Elite Advisory
+            Venture Studio & Strategic Advisory
           </p>
           <p className="text-xs md:text-sm text-text-secondary font-light">
             Based in Dubai, UAE

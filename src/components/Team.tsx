@@ -12,7 +12,7 @@ export default function Team() {
         "Founded crypto on/off ramp company in UAE (raised venture funding, built founding team)",
         "Hosted Solana dinner in Riyadh with 500 Global VC — met HRH Prince Sultan Bin Fahd Bin Salman Al Saud",
         "Met with H.E. Khalfan Belhoul and Ahmed Bin Sulayem at DMCC Al Centre opening",
-        "Organized Founders' Villa: 49 Solana founders together in UAE"
+        "Host of Solana Economic Zone: 700+ founders' conference occurring twice a year in Dubai and Abu Dhabi"
       ],
       endorsements: [
         { name: "Lily Liu, President, Solana Foundation", quote: "Only possible with Alex" },
