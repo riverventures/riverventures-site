@@ -1,50 +1,15 @@
 export default function Portfolio() {
   const portfolioCompanies = [
-    {
-      name: "Argus",
-      url: "withargus.ai",
-      description: "AI executive agent setup service",
-      category: "Portfolio Company"
-    },
-    {
-      name: "SnapBot",
-      url: "snapbot.io",
-      description: "WhatsApp product photography automation",
-      category: "Portfolio Company"
-    },
-    {
-      name: "UAE.fun",
-      url: "uae.fun",
-      description: "Concierge & UAE immigration support",
-      category: "Portfolio Company"
-    }
+    { name: "Argus", url: "withargus.ai", description: "AI executive agent setup service", category: "Portfolio Company" },
+    { name: "SnapBot", url: "snapbot.io", description: "WhatsApp product photography automation", category: "Portfolio Company" },
+    { name: "UAE.fun", url: "uae.fun", description: "Concierge & UAE immigration support", category: "Portfolio Company" },
   ];
 
   const advisoryClients = [
-    {
-      name: "KAST",
-      description: "Stablecoin-powered financial platform with global debit cards",
-      category: "Advisory Client",
-      url: "kast.xyz"
-    },
-    {
-      name: "STBL",
-      description: "Decentralized protocol for next-generation stablecoins",
-      category: "Advisory Client",
-      url: "stbl.com"
-    },
-    {
-      name: "Credible Finance",
-      description: "First stablecoin pay later protocol for on-chain credit",
-      category: "Advisory Client",
-      url: "credible.finance"
-    },
-    {
-      name: "Third Time Games",
-      description: "Virtual horse racing games and Web3 gaming pioneers",
-      category: "Advisory Client",
-      url: "thirdtimegames.com"
-    }
+    { name: "KAST", description: "Stablecoin-powered financial platform with global debit cards", category: "Advisory Client", url: "kast.xyz" },
+    { name: "STBL", description: "Decentralized protocol for next-generation stablecoins", category: "Advisory Client", url: "stbl.com" },
+    { name: "Credible Finance", description: "First stablecoin pay later protocol for on-chain credit", category: "Advisory Client", url: "credible.finance" },
+    { name: "Third Time Games", description: "Virtual horse racing games and Web3 gaming pioneers", category: "Advisory Client", url: "thirdtimegames.com" },
   ];
 
   return (
@@ -62,38 +27,28 @@ export default function Portfolio() {
 
         {/* Portfolio Companies */}
         <div className="mb-8">
-          <h3 className="text-lg md:text-xl font-light text-white mb-4 text-center">
-            Portfolio Companies
-          </h3>
+          <h3 className="text-lg md:text-xl font-light text-white mb-4 text-center">Portfolio Companies</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {portfolioCompanies.map((company) => (
               <div
                 key={company.name}
-                className="p-4 bg-accent border border-border hover:border-text-muted transition-smooth group"
+                className="p-4 bg-accent border border-border river-glow river-shimmer transition-smooth group relative"
               >
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between mb-3">
-                    <h4 className="text-xl font-medium text-white group-hover:text-text-muted transition-smooth">
+                    <h4 className="text-xl font-medium text-white group-hover:text-river-light transition-smooth">
                       {company.name}
                     </h4>
                     {company.url && (
-                      <a
-                        href={`https://${company.url}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-text-secondary hover:text-white text-sm transition-smooth"
-                      >
+                      <a href={`https://${company.url}`} target="_blank" rel="noopener noreferrer"
+                        className="text-text-secondary hover:text-river-light text-sm transition-smooth">
                         {company.url}
                       </a>
                     )}
                   </div>
-                  <p className="text-text-muted text-sm leading-relaxed flex-1">
-                    {company.description}
-                  </p>
-                  <div className="mt-4 pt-3 border-t border-border">
-                    <span className="text-xs text-text-secondary uppercase tracking-wider">
-                      {company.category}
-                    </span>
+                  <p className="text-text-muted text-sm leading-relaxed flex-1">{company.description}</p>
+                  <div className="mt-4 pt-3 river-border-top">
+                    <span className="text-xs text-text-secondary uppercase tracking-wider">{company.category}</span>
                   </div>
                 </div>
               </div>
@@ -103,38 +58,26 @@ export default function Portfolio() {
 
         {/* Advisory Clients */}
         <div>
-          <h3 className="text-lg md:text-xl font-light text-white mb-4 text-center">
-            Advisory Clients
-          </h3>
+          <h3 className="text-lg md:text-xl font-light text-white mb-4 text-center">Advisory Clients</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {advisoryClients.map((client) => (
               <div
                 key={client.name}
-                className="p-4 bg-primary border border-border hover:border-text-muted transition-smooth group"
+                className="p-4 bg-primary border border-border river-glow transition-smooth group"
               >
                 <div className="flex flex-col h-full">
                   <div className="flex items-center justify-between mb-2">
-                    <h4 className="text-base font-medium text-white group-hover:text-text-muted transition-smooth">
-                      {client.name}
-                    </h4>
+                    <h4 className="text-base font-medium text-white group-hover:text-river-light transition-smooth">{client.name}</h4>
                     {client.url && (
-                      <a
-                        href={`https://${client.url}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-text-secondary hover:text-white text-xs transition-smooth"
-                      >
+                      <a href={`https://${client.url}`} target="_blank" rel="noopener noreferrer"
+                        className="text-text-secondary hover:text-river-light text-xs transition-smooth">
                         {client.url}
                       </a>
                     )}
                   </div>
-                  <p className="text-text-muted text-xs leading-relaxed flex-1">
-                    {client.description}
-                  </p>
-                  <div className="mt-3 pt-2 border-t border-border">
-                    <span className="text-[10px] text-text-secondary uppercase tracking-wider">
-                      {client.category}
-                    </span>
+                  <p className="text-text-muted text-xs leading-relaxed flex-1">{client.description}</p>
+                  <div className="mt-3 pt-2 river-border-top">
+                    <span className="text-[10px] text-text-secondary uppercase tracking-wider">{client.category}</span>
                   </div>
                 </div>
               </div>

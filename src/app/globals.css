@@ -53,3 +53,52 @@ a:focus-visible {
 .transition-smooth {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* River flow gradient line */
+.river-line {
+  background: linear-gradient(90deg, transparent, #1a3a5c, #2a5a8c, #1a3a5c, transparent);
+  height: 1px;
+}
+
+.river-line-thick {
+  background: linear-gradient(90deg, transparent, #1a3a5c, #2a5a8c, #1a3a5c, transparent);
+  height: 2px;
+}
+
+/* Animated flow shimmer */
+.river-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.river-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(26, 58, 92, 0.15), transparent);
+  animation: shimmer 6s ease-in-out infinite;
+}
+@keyframes shimmer {
+  0% { left: -50%; }
+  100% { left: 150%; }
+}
+
+/* Subtle river glow on hover */
+.river-glow:hover {
+  box-shadow: 0 0 20px rgba(26, 58, 92, 0.3), inset 0 1px 0 rgba(42, 90, 140, 0.1);
+  border-color: #2a5a8c !important;
+}
+
+/* River gradient border (top) */
+.river-border-top {
+  border-top: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, #1a3a5c, #2a5a8c, #1a3a5c, transparent) 1;
+}
+
+/* River gradient border (bottom) */
+.river-border-bottom {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, #1a3a5c, #2a5a8c, #1a3a5c, transparent) 1;
+}

@@ -20,6 +20,23 @@ const config: Config = {
         'text-muted': '#B0B0B0',
         'text-secondary': '#808080',
         border: '#333333',
+        river: '#1a3a5c',
+        'river-light': '#2a5a8c',
+        'river-dark': '#0f2440',
+      },
+      keyframes: {
+        'flow': {
+          '0%, 100%': { transform: 'translateX(-100%)' },
+          '50%': { transform: 'translateX(100%)' },
+        },
+        'flow-slow': {
+          '0%': { transform: 'translateX(-50%) scaleX(1.5)' },
+          '100%': { transform: 'translateX(50%) scaleX(1.5)' },
+        },
+      },
+      animation: {
+        'flow': 'flow 8s ease-in-out infinite',
+        'flow-slow': 'flow-slow 12s ease-in-out infinite alternate',
       },
       spacing: {
         '18': '4.5rem',

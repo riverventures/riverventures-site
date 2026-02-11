@@ -1,14 +1,23 @@
 export default function Hero() {
   return (
-    <section className="min-h-[60vh] flex items-center justify-center px-4 py-6 bg-gradient-to-b from-primary via-secondary/50 to-primary">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="min-h-[60vh] flex items-center justify-center px-4 py-6 relative overflow-hidden bg-primary">
+      {/* Subtle river flow background */}
+      <div className="absolute inset-0 opacity-[0.07]">
+        <svg className="absolute w-full h-full" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none">
+          <path d="M-100 400 C200 350, 400 450, 700 380 C1000 310, 1200 420, 1540 370" stroke="#2a5a8c" strokeWidth="2" />
+          <path d="M-100 500 C200 460, 500 540, 800 480 C1100 420, 1300 510, 1540 470" stroke="#1a3a5c" strokeWidth="1.5" />
+          <path d="M-100 300 C300 270, 600 340, 900 290 C1100 260, 1300 320, 1540 280" stroke="#1a3a5c" strokeWidth="1" />
+        </svg>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Logo/Name */}
         <div className="mb-6">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-extralight tracking-tight leading-none mb-2">
             <span className="text-white">RIVER</span>
             <span className="text-text-muted ml-4">VENTURES</span>
           </h1>
-          <div className="h-px w-24 bg-gradient-to-r from-transparent via-white to-transparent mx-auto mt-4"></div>
+          <div className="h-px w-32 bg-gradient-to-r from-transparent via-river-light to-transparent mx-auto mt-4"></div>
         </div>
 
         {/* Tagline */}
@@ -31,21 +40,22 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Key Stats/Highlights */}
+        {/* Key Stats */}
         <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-lg mx-auto">
-          <div className="text-center">
-            <div className="text-lg md:text-2xl font-light text-white mb-1">20+</div>
-            <div className="text-xs text-text-secondary uppercase tracking-widest">Years Experience</div>
-          </div>
-          <div className="text-center">
-            <div className="text-lg md:text-2xl font-light text-white mb-1">$40B+</div>
-            <div className="text-xs text-text-secondary uppercase tracking-widest">Pipeline Built</div>
-          </div>
-          <div className="text-center">
-            <div className="text-lg md:text-2xl font-light text-white mb-1">Global</div>
-            <div className="text-xs text-text-secondary uppercase tracking-widest">Network</div>
-          </div>
+          {[
+            { value: "20+", label: "Years Experience" },
+            { value: "$40B+", label: "Pipeline Built" },
+            { value: "Global", label: "Network" },
+          ].map((stat) => (
+            <div key={stat.label} className="text-center relative">
+              <div className="text-lg md:text-2xl font-light text-white mb-1">{stat.value}</div>
+              <div className="text-xs text-text-secondary uppercase tracking-widest">{stat.label}</div>
+            </div>
+          ))}
         </div>
+
+        {/* Thin river accent between stats and CTA */}
+        <div className="river-line w-48 mx-auto mb-8 opacity-50"></div>
 
         {/* CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -59,7 +69,7 @@ export default function Hero() {
           </a>
           <a
             href="#portfolio"
-            className="px-6 py-2 border border-text-muted text-text-muted text-xs font-medium uppercase tracking-wider hover:border-white hover:text-white transition-smooth"
+            className="px-6 py-2 border border-border text-text-muted text-xs font-medium uppercase tracking-wider hover:border-river-light hover:text-white transition-smooth"
           >
             View Portfolio
           </a>
