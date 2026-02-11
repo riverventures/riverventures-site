@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Portfolio() {
   const portfolioCompanies = [
     { name: "Argus", url: "withargus.ai", description: "AI executive agent setup service", category: "Portfolio Company", logo: "/logos/argus.png" },
-    { name: "SnapBot", url: "snapbot.io", description: "WhatsApp product photography automation", category: "Portfolio Company", letter: "S" },
+    { name: "Booth", url: "trybooth.ai", description: "WhatsApp product photography automation", category: "Portfolio Company", letter: "B" },
     { name: "UAE.fun", url: "uae.fun", description: "Concierge & UAE immigration support", category: "Portfolio Company", letter: "U" },
   ];
 
