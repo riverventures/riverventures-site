@@ -8,57 +8,63 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="py-8 md:py-12 px-4 bg-secondary">
+    <section id="portfolio" className="py-4 md:py-6 px-4 bg-secondary">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h2 className="text-2xl md:text-4xl font-extralight tracking-tight text-white mb-3">
+        <div className="text-center mb-4">
+          <h2 className="text-2xl md:text-3xl font-extralight tracking-tight text-white mb-1">
             Portfolio & Clients
           </h2>
-          <p className="text-base text-text-muted font-light max-w-2xl mx-auto">
+          <p className="text-sm text-text-muted font-light max-w-2xl mx-auto">
             Building and advising transformational companies across fintech, crypto, and emerging technologies.
           </p>
         </div>
 
         {/* Portfolio Companies */}
-        <div className="mb-8">
-          <h3 className="text-lg md:text-xl font-light text-white mb-4 text-center">Portfolio Companies</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div>
+          <h3 className="text-sm font-light text-text-secondary mb-3 text-center uppercase tracking-wider">Portfolio Companies</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {portfolioCompanies.map((company) => (
               <a
                 key={company.name}
                 href={`https://${company.url}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 bg-accent border border-border river-glow river-shimmer transition-smooth group relative block"
+                className="bg-accent border border-border river-glow river-shimmer transition-smooth group relative block overflow-hidden"
               >
-                <div className="flex flex-col h-full">
-                  <div className="flex items-center gap-3 mb-3">
-                    <div className="w-9 h-9 rounded-sm overflow-hidden flex-shrink-0 bg-secondary flex items-center justify-center border border-border">
+                {/* Screenshot preview */}
+                <div className="w-full h-28 bg-secondary border-b border-border overflow-hidden">
+                  <img
+                    src={`https://api.microlink.io/?url=https://${company.url}&screenshot=true&meta=false&embed=screenshot.url`}
+                    alt={`${company.name} preview`}
+                    className="w-full h-full object-cover object-top opacity-70 group-hover:opacity-90 transition-all duration-300 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-3">
+                  <div className="flex items-center gap-2 mb-1">
+                    <div className="w-7 h-7 rounded-sm overflow-hidden flex-shrink-0 bg-secondary flex items-center justify-center border border-border">
                       {company.logo ? (
                         <Image
                           src={company.logo}
                           alt={`${company.name} logo`}
-                          width={36}
-                          height={36}
+                          width={28}
+                          height={28}
                           className="object-contain"
                           unoptimized
                         />
                       ) : (
-                        <span className="text-sm font-medium text-text-muted">{company.letter}</span>
+                        <span className="text-xs font-medium text-text-muted">{company.letter}</span>
                       )}
                     </div>
                     <div className="flex-1 flex items-center justify-between">
-                      <h4 className="text-xl font-medium text-white group-hover:text-river-light transition-smooth">
+                      <h4 className="text-base font-medium text-white group-hover:text-river-light transition-smooth">
                         {company.name}
                       </h4>
-                      <span className="text-text-secondary text-sm">{company.url}</span>
+                      <span className="text-text-secondary text-xs">{company.url}</span>
                     </div>
                   </div>
-                  <p className="text-text-muted text-sm leading-relaxed flex-1">{company.description}</p>
-                  <div className="mt-4 pt-3 river-border-top">
-                    <span className="text-xs text-text-secondary uppercase tracking-wider">{company.category}</span>
-                  </div>
+                  <p className="text-text-muted text-xs leading-snug">{company.description}</p>
                 </div>
               </a>
             ))}
