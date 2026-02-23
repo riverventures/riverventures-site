@@ -106,7 +106,7 @@ export default function Services() {
         <div className="mt-6 text-center">
           <div className="inline-block px-4 py-2 border border-border bg-secondary river-border-top">
             <p className="text-xs text-text-muted">
-              <span className="text-white font-medium">Specialization:</span> Fintech, Digital Assets, Payments, and Emerging Technologies
+              <span className="text-white font-medium">Specialization:</span> Fintech, AI, Payments, and Emerging Technologies
             </p>
           </div>
         </div>
