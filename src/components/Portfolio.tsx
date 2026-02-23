@@ -17,7 +17,7 @@ export default function Portfolio() {
             Portfolio & Clients
           </h2>
           <p className="text-sm text-text-muted font-light max-w-2xl mx-auto">
-            Building and advising transformational companies across fintech, AI, and emerging technologies.
+            Building and advising transformational companies across AI and emerging technologies.
           </p>
         </div>
 

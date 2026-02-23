@@ -4,12 +4,12 @@ export default function Team() {
       name: "Alex Scott",
       title: "Co-founder",
       role: "Co-founder, River Ventures",
-      bio: "Former Amazon Product and Engineering roles in Luxembourg and London. Management Consultant at Deloitte Digital serving financial services clients in London. Founded a payments company in UAE and raised venture funding. Deep expertise in emerging technologies and institutional partnerships across the Gulf region.",
+      bio: "Former Amazon Product and Engineering roles in Luxembourg and London. Management Consultant at Deloitte Digital. Founded a technology company in UAE and raised venture funding. Deep expertise in emerging technologies and institutional partnerships across the Gulf region.",
       trackRecord: [
         "Led ecosystem development across UAE/MENA — government relationships, founder support, large-scale events",
         "Amazon: Automated 35K+ annual contract negotiations, customer support, marketing campaigns",
         "Ledger: Built fraud detection API protecting 1.4M monthly active users, scanning 10M transactions/month",
-        "Founded payments company in UAE (raised venture funding, built founding team)",
+        "Founded technology company in UAE (raised venture funding, built founding team)",
         "Hosted institutional dinners in Riyadh with 500 Global VC and Saudi institutional investors",
         "Host of 700+ attendee founders' conference occurring twice a year in Dubai and Abu Dhabi"
       ],
@@ -22,7 +22,7 @@ export default function Team() {
         { publication: "The National", title: "Technology sector seeks UAE foothold with Founders' Villa event" },
         { publication: "Cointelegraph", title: "VC Startup Connect Dubai Edition" }
       ],
-      specialties: ["Institutional Partnerships", "Regulatory Strategy", "Technology Infrastructure", "Regional Expansion"],
+      specialties: ["Institutional Partnerships", "Go-to-Market Strategy", "Technology Infrastructure", "Regional Expansion"],
       social: { twitter: "afscott", linkedin: "alexfscott" }
     },
     {

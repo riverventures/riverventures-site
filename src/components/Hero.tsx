@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="mb-8 max-w-3xl mx-auto">
           <p className="text-base md:text-lg lg:text-xl font-light leading-relaxed text-text-muted">
             We partner with transformational companies in{" "}
-            <span className="text-white">fintech</span> and{" "}
+            <span className="text-white">AI</span> and{" "}
             <span className="text-white">emerging technologies</span>, providing strategic advisory 
             and building the next generation of high-impact ventures.
           </p>

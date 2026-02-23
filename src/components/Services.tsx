@@ -3,8 +3,8 @@ export default function Services() {
     {
       title: "Strategic Advisory",
       subtitle: "Growth Partnership",
-      description: "Strategic and operational expertise for early-stage and growth-stage companies scaling in fintech and emerging technologies.",
-      highlights: ["Product roadmap development", "Go-to-market strategy", "Fundraising guidance", "Regulatory navigation"],
+      description: "Strategic and operational expertise for early-stage and growth-stage companies scaling in AI and emerging technologies.",
+      highlights: ["Product roadmap development", "Go-to-market strategy", "Fundraising guidance", "Market entry planning"],
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" strokeLinecap="round" strokeLinejoin="round"/>
@@ -25,8 +25,8 @@ export default function Services() {
     {
       title: "Institutional Partnerships",
       subtitle: "UAE/MENA Focus",
-      description: "Deep relationships across banks, financial institutions, and regulatory bodies in the Gulf region.",
-      highlights: ["Banking and institutional partnerships", "Regulatory relationships", "Institutional onboarding", "Regional ecosystem development"],
+      description: "Deep relationships across major institutions and government bodies in the Gulf region.",
+      highlights: ["Government and institutional partnerships", "Strategic relationships", "Institutional onboarding", "Regional ecosystem development"],
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3" strokeLinecap="round" strokeLinejoin="round"/>
@@ -106,7 +106,7 @@ export default function Services() {
         <div className="mt-6 text-center">
           <div className="inline-block px-4 py-2 border border-border bg-secondary river-border-top">
             <p className="text-xs text-text-muted">
-              <span className="text-white font-medium">Specialization:</span> Fintech, AI, Payments, and Emerging Technologies
+              <span className="text-white font-medium">Specialization:</span> AI, Technology, and Emerging Industries
             </p>
           </div>
         </div>

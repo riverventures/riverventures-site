@@ -12,13 +12,13 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "River Ventures | Venture Studio & Elite Advisory",
   description:
-    "River Ventures is a venture studio and strategic advisory firm based in Dubai. We provide strategic advisory, venture building, and deep expertise for fintech and emerging technology companies.",
+    "River Ventures is a venture studio and strategic advisory firm based in Dubai. We provide strategic advisory, venture building, and deep expertise for AI and emerging technology companies.",
   openGraph: {
     title: "River Ventures | Venture Studio & Elite Advisory",
-    description: "Dubai-based venture studio and advisory firm specializing in fintech, AI, and emerging technologies.",
+    description: "Dubai-based venture studio and advisory firm specializing in AI and emerging technologies.",
     url: "https://riverventures.co",
   },
-  keywords: ["venture capital", "advisory", "startup", "fintech", "emerging technologies", "Dubai", "UAE", "venture studio"],
+  keywords: ["venture capital", "advisory", "startup", "AI", "emerging technologies", "Dubai", "UAE", "venture studio"],
 };
 
 export default function RootLayout({
