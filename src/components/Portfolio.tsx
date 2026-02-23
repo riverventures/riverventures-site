@@ -5,6 +5,7 @@ export default function Portfolio() {
     { name: "Argus", url: "withargus.ai", description: "AI executive agent setup service", category: "Portfolio Company", logo: "/logos/argus.png" },
     { name: "Booth", url: "trybooth.ai", description: "WhatsApp product photography automation", category: "Portfolio Company", letter: "B" },
     { name: "UAE.fun", url: "uae.fun", description: "Concierge & UAE immigration support", category: "Portfolio Company", letter: "U" },
+    { name: "The Midori", url: "themidori.co", description: "E-commerce", category: "Portfolio Company", letter: "M" },
   ];
 
   return (
@@ -23,7 +24,7 @@ export default function Portfolio() {
         {/* Portfolio Companies */}
         <div>
           <h3 className="text-sm font-light text-text-secondary mb-3 text-center uppercase tracking-wider">Portfolio Companies</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
             {portfolioCompanies.map((company) => (
               <a
                 key={company.name}
