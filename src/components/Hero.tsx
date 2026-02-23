@@ -41,10 +41,9 @@ export default function Hero() {
         </div>
 
         {/* Key Stats */}
-        <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 max-w-lg mx-auto">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 mb-8 max-w-sm mx-auto">
           {[
             { value: "20+", label: "Years Experience" },
-            { value: "$40B+", label: "Pipeline Built" },
             { value: "Global", label: "Network" },
           ].map((stat) => (
             <div key={stat.label} className="text-center relative">
