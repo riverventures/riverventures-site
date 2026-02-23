@@ -4,28 +4,25 @@ export default function Team() {
       name: "Alex Scott",
       title: "Co-founder",
       role: "Co-founder, River Ventures",
-      bio: "Former Amazon Product and Engineering roles in Luxembourg and London. Management Consultant at Deloitte Digital serving financial services clients in London. Founded a crypto on/off ramp company in UAE and raised venture funding. Currently UAE/MENA Regional Lead at Solana Foundation.",
+      bio: "Former Amazon Product and Engineering roles in Luxembourg and London. Management Consultant at Deloitte Digital serving financial services clients in London. Founded a payments company in UAE and raised venture funding. Deep expertise in emerging technologies and institutional partnerships across the Gulf region.",
       trackRecord: [
-        "Led Solana ecosystem development across UAE/MENA — government relationships, founder support, large-scale hackathons",
+        "Led ecosystem development across UAE/MENA — government relationships, founder support, large-scale events",
         "Amazon: Automated 35K+ annual contract negotiations, customer support, marketing campaigns",
-        "Ledger: Built web3 scam detection API protecting 1.4M monthly active users, scanning 10M transactions/month",
-        "Founded crypto on/off ramp company in UAE (raised venture funding, built founding team)",
-        "Hosted Solana dinner in Riyadh with 500 Global VC and Saudi institutional investors",
-        "Host of Solana Economic Zone: 700+ founders' conference occurring twice a year in Dubai and Abu Dhabi"
+        "Ledger: Built fraud detection API protecting 1.4M monthly active users, scanning 10M transactions/month",
+        "Founded payments company in UAE (raised venture funding, built founding team)",
+        "Hosted institutional dinners in Riyadh with 500 Global VC and Saudi institutional investors",
+        "Host of 700+ attendee founders' conference occurring twice a year in Dubai and Abu Dhabi"
       ],
       endorsements: [
-        { name: "Lily Liu, President, Solana Foundation", quote: "Only possible with Alex" },
         { name: "Nas Daily", quote: "So impressed with how you put all of this together in such a short time" },
-        { name: "0xMert (Helius Labs)", quote: "Shoutout to @afscott for making moving to Dubai extremely easy" },
-        { name: "Akshay (Superteam)", quote: "@afscott is a beast and can help you navigate any business ambition in the Middle East" }
+        { name: "Akshay", quote: "@afscott is a beast and can help you navigate any business ambition in the Middle East" }
       ],
       media: [
-        { publication: "Forbes", title: "Solana Launches Dubai Crypto Economic Zone" },
-        { publication: "The National", title: "Solana blockchain seeks UAE foothold with Founders' Villa event" },
-        { publication: "Cointelegraph", title: "VC Startup Connect Dubai Edition" },
-        { publication: "The Crypto Radio", title: "Solana supercharges the crypto economy" }
+        { publication: "Forbes", title: "Dubai Economic Zone Launch" },
+        { publication: "The National", title: "Technology sector seeks UAE foothold with Founders' Villa event" },
+        { publication: "Cointelegraph", title: "VC Startup Connect Dubai Edition" }
       ],
-      specialties: ["Institutional Partnerships", "Regulatory Strategy", "Blockchain Infrastructure", "Regional Expansion"],
+      specialties: ["Institutional Partnerships", "Regulatory Strategy", "Technology Infrastructure", "Regional Expansion"],
       social: { twitter: "afscott", linkedin: "alexfscott" }
     },
     {
@@ -52,7 +49,7 @@ export default function Team() {
         <div className="text-center mb-8">
           <h2 className="text-2xl md:text-4xl font-extralight tracking-tight text-white mb-3">Leadership Team</h2>
           <p className="text-base text-text-muted font-light max-w-2xl mx-auto">
-            Experienced founders and operators with deep expertise in venture building, blockchain technology, and the UAE market.
+            Experienced founders and operators with deep expertise in venture building, emerging technologies, and the UAE market.
           </p>
         </div>
 

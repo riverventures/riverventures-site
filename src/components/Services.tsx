@@ -3,7 +3,7 @@ export default function Services() {
     {
       title: "Strategic Advisory",
       subtitle: "Growth Partnership",
-      description: "Strategic and operational expertise for early-stage and growth-stage companies scaling in fintech and crypto.",
+      description: "Strategic and operational expertise for early-stage and growth-stage companies scaling in fintech and emerging technologies.",
       highlights: ["Product roadmap development", "Go-to-market strategy", "Fundraising guidance", "Regulatory navigation"],
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -24,8 +24,8 @@ export default function Services() {
     },
     {
       title: "Institutional Partnerships",
-      subtitle: "Solana Foundation",
-      description: "Leading Solana Foundation's UAE/MENA expansion with deep relationships across banks, RWA providers, and regulatory bodies.",
+      subtitle: "UAE/MENA Focus",
+      description: "Deep relationships across banks, financial institutions, and regulatory bodies in the Gulf region.",
       highlights: ["Banking and institutional partnerships", "Regulatory relationships", "Institutional onboarding", "Regional ecosystem development"],
       icon: (
         <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -106,7 +106,7 @@ export default function Services() {
         <div className="mt-6 text-center">
           <div className="inline-block px-4 py-2 border border-border bg-secondary river-border-top">
             <p className="text-xs text-text-muted">
-              <span className="text-white font-medium">Specialization:</span> Fintech, Crypto, Real World Assets (RWA), Stablecoins, and Emerging Technologies
+              <span className="text-white font-medium">Specialization:</span> Fintech, Digital Assets, Payments, and Emerging Technologies
             </p>
           </div>
         </div>
