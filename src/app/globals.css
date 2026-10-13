@@ -9,3 +9,14 @@
 @media(max-width:760px){.wrap{width:calc(100% - 40px)}.site-header{min-height:88px;flex-wrap:wrap;padding-block:16px;gap:8px}.wordmark{font-size:13px}.river-mark{font-size:32px}.site-header nav{gap:22px;font-size:11px;width:100%;justify-content:space-between}.hero{padding-top:44px}.hero h1{font-size:clamp(43px,9vw,66px);margin-top:25px}.hero-bottom{display:block;margin-top:24px}.hero-bottom p{font-size:15px}.desktop-break{display:none}.round-link{margin-top:22px;justify-content:space-between}.river-art{margin-top:15px;height:100px}.hero-caption{font-size:8px;padding-bottom:26px}.brands-section,.people-section{padding-block:54px}.section-heading{display:block;margin-bottom:30px}.section-heading h2{min-width:0;font-size:33px;margin-top:18px}.section-heading>p:last-child{margin-top:22px;max-width:100%;font-size:14px}.brand-grid,.people-grid{grid-template-columns:1fr;gap:20px}.brand{padding:28px;min-height:480px}.brand h3{margin:33px 0 26px;font-size:56px}.argus h3{font-size:49px}.brand-headline{font-size:23px}.brand-services{font-size:9px;gap:8px}.brand-services li:not(:last-child)::after{margin-left:8px}.people-grid{margin-top:32px;gap:36px}.contact-section{padding:48px 0}.contact-inner{display:block}.contact-inner h2{font-size:40px}.contact-inner>div+div{margin-top:32px}.contact-inner a{font-size:18px}.site-footer{padding-block:26px;align-items:flex-start;flex-direction:column;gap:12px}.site-footer .wordmark{min-height:30px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media(min-width:761px) and (max-width:1100px){.brand h3{font-size:42px}.jade .brand-dot{font-size:25px;margin-left:8px}.brand-headline{font-size:21px}}
+
+/* UAE.fun complements the two AI brands with a full-width third panel. */
+.uae { background: #e9dece; color: var(--ink); }
+.uae .brand-link { border-color: #9d978a; }
+@media (min-width: 761px) {
+  .uae { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+  .uae .brand-top, .uae .brand-link { grid-column: 1 / -1; }
+  .uae h3 { grid-column: 1; grid-row: 2 / 4; align-self: center; }
+  .uae .brand-headline { grid-column: 2; margin-top: 32px; }
+  .uae .brand-description, .uae .brand-services { grid-column: 2; }
+}
